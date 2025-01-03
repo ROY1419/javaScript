@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <title>Dom Learning</title>
     <style>
-        .bg-balck{
+        .bg-balck {
             background: #212121;
             color: white;
         }
     </style>
 </head>
+
 <body>
     <div class="bg-black">
+        <!-- setAtribute is method which is use to change the given class of the element -->
         <h1 id="title" class="heading">
             DOM learning by self
-            <span style="display : none,"> test test</span>
+            <span style="display : none,"> test text</span>
         </h1>
+        <h2>this is shubham roy</h2>
         <input type="password" name="" id="">
         <ul>
             <li class="list-item">home</li>
@@ -26,4 +30,91 @@
         </ul>
     </div>
 </body>
+
 </html>
+<!-- document.getElementById('title')
+< <h1 id="title" class="heading">…</h1>,
+> const title =  document.getElementById('title')
+
+< undefined,
+> title.style.backgroundColor = 'green'
+< "green",
+> title.style.padding = '15px'
+< "15px",
+> title.style.borderRadius ='20px'
+< "20px",
+> title.textContent
+< "
+            DOM learning by self
+            test text
+        ",
+> title.innerHTML
+< "
+            DOM learning by self
+            <span style=\"display : none,\"> test test</span>
+        ",
+> title.innerText
+< "DOM learning by self test text",
+> document.getElementsByClassName('heading')
+< HTMLCollection (1) = $1
+0
+<h1 id="title" class="heading">…</h1>,
+
+HTMLCollection Prototype
+
+> document.querySelector('h2')
+< <h2>this is shubham roy</h2>,
+> document.querySelector('#title')
+< <h1 id="title" class="heading">…</h1>,
+> document.querySelector('.heading')
+< <h1 id="title" class="heading">…</h1>,
+> document.querySelector("input[type ='password']")
+< <input type="password" name id>,
+> document.querySelector("p:first-child")
+< null,
+> document.querySelector('ul')
+< <ul>…</ul>,
+> myu.querySelector('li')
+< <li class="list-item">home</li>,
+> turngreen.querySelector = 'green'
+< "green",
+> document.querySelectorAll("li")
+< NodeList [<li class="list-item">, <li class="list-item">, <li class="list-item">, <li class="list-item">] (4)
+> const tempLiList = document.querySelectorAll("li")
+< undefined
+> tempLiList
+< NodeList [<li class="list-item">, <li class="list-item">, <li class="list-item">, <li class="list-item">] (4)
+> tempLiList.style.color = 'green'
+< TypeError: undefined is not an object (evaluating 'tempLiList.style.color = 'green'')
+> tempLiList[0].style.color = 'green'
+< "green"
+> document.querySelectorAll("li")
+< NodeList [<li class="list-item">, <li class="list-item">, <li class="list-item">, <li class="list-item">] (4)
+> const myH1 = document.querySelectorAll('h1')
+< undefined
+> myH1
+< NodeList [<h1 id="title">] (1)
+> myH1[0].style.color = 'greem'
+< "greem"
+> const tempLiList = document.querySelectorAll("li")
+< undefined
+> tempLiList
+< NodeList [<li class="list-item">, <li class="list-item">, <li class="list-item">, <li class="list-item">] (4)
+> tempLiList.forEach(function (l) {})
+< undefined
+< undefined
+> tempLiList.forEach(function (l) {l.style.backgroundColor = 'green'})
+< undefined
+> document.getElementsByClassName('list-item')
+< HTMLCollection [<li class="list-item">, <li class="list-item">, <li class="list-item">, <li class="list-item">] (4)
+> const tempClassList = document.getElementsByClassName('list-item')
+< undefine
+> Array.from(tempClassList)
+< [<li class="list-item">, <li class="list-item">, <li class="list-item">, <li class="list-item">] (4)
+> const myConvertedArray = Array.from(tempClassList)
+< undefined
+> myConvertedArray
+< [<li class="list-item">, <li class="list-item">, <li class="list-item">, <li class="list-item">] (4)
+> myConvertedArray.forEach(function (li){li.style.color = 'orange'})
+< undefined
+-->
